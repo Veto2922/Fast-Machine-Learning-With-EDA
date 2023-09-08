@@ -4,6 +4,8 @@
 
 FastML_With_EDA is a versatile Python package designed to simplify the machine learning pipeline, from exploratory data analysis (EDA) and preprocessing to automated machine learning (AutoML) model training and evaluation. Whether you're a beginner or an experienced data scientist, FastML provides the tools you need to streamline your workflow and make data-driven decisions.
 
+## Pypi link : https://pypi.org/project/FastML-With-EDA/
+
 ## Features
 
 - **Data Loading:** Load data from various file formats, including CSV, Excel, and SQL databases.
