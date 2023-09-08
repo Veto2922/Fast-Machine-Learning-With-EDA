@@ -21,7 +21,7 @@ FastML_With_EDA is a versatile Python package designed to simplify the machine l
 You can install FastML using pip:
 
 ```bash
-pip install FastML
+pip install FastML-With-EDA
 ```
 
 ## Usage
@@ -29,28 +29,29 @@ pip install FastML
 Here's a basic example of how to use FastML for EDA and AutoML:
 
 ```python
-import FastML
+from FastML_With_EDA import EDA_and_preprocessing as EP
+from FastML_With_EDA import AutoML
 
 # Load your data
-data = FastML.load_data('data.csv')
+data = EP.load_data('data.csv')
 
 # Explore the data
-FastML.explore_data(data)
+EP.explore_data(data)
 
 # Handle missing values
-data = FastML.handling_missing_values(data, missing_strategy='mean')
+data = EP.handling_missing_values(data, missing_strategy='mean')
 
 # Detect and remove outliers
-data = FastML.outliers(data, remove=True)
+data = EP.outliers(data, remove=True)
 
 # Visualize your data
-FastML.plot_data(data, plot_type='histogram', x='feature_name')
+EP.plot_data(data, plot_type='histogram', x='feature_name')
 
 # Encode categorical features
-data_encoded = FastML.encode_categorical_features(data, type_of_encoding='onehot')
+data_encoded = EP.encode_categorical_features(data, type_of_encoding='onehot')
 
 # Train machine learning models
-models, training_df, testing_df, best_model = FastML.train_machine_learning_models(
+models, training_df, testing_df, best_model = AutoML.train_machine_learning_models(
     data, target_column='target', task_type='classification', model_names=None, test_size=0.2, hyperparameters={}, scaling='minmax'
 )
 
