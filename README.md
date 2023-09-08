@@ -1,4 +1,4 @@
-# Fast-Machine-Learning-With-EDA
+# Fast-Machine-Learning-With-EDA python package
 
 # FastML_With_EDA
 
